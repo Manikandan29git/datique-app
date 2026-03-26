@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DataWorth – Personal Data Value Explorer</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- LOGIN SCREEN -->
+<div id="loginScreen" class="screen active">
+
+<h1>Hushh Data Explorer</h1>
+
+<input type="email" id="emailInput" placeholder="Email">
+<input type="password" id="passInput" placeholder="Password">
+
+<button onclick="doEmailLogin()">Login</button>
+
+</div>
+
+<!-- APP SCREEN -->
+<div id="appScreen" class="screen">
+
+<h2>Dashboard</h2>
+
+<div>
+Total Records: <span id="dashRecords">0</span>
+</div>
+
+<div>
+Total Value: <span id="dashValue">₹0</span>
+</div>
+
+<canvas id="pieChart"></canvas>
+<canvas id="barChart"></canvas>
+<canvas id="lineChart"></canvas>
+
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="app.js"></script>
+<script src="upload.js"></script>
+<script src="valuation.js"></script>
+<script src="privacy.js"></script>
+<script src="brands.js"></script>
+<script src="report.js"></script>
+<script src="settings.js"></script>
+<script src="toast.js"></script>
+
+</body>
+</html>

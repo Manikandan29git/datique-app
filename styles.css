@@ -1,0 +1,37 @@
+body{
+font-family:Arial;
+background:#0f172a;
+color:white;
+margin:0;
+padding:20px;
+}
+
+.screen{
+display:none;
+}
+
+.screen.active{
+display:block;
+}
+
+button{
+background:#4f8ef7;
+border:none;
+padding:10px 20px;
+color:white;
+cursor:pointer;
+}
+
+.toast{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#111;
+padding:12px 20px;
+border-radius:6px;
+display:none;
+}
+
+.toast.show{
+display:block;
+}
